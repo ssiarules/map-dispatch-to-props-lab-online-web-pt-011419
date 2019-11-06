@@ -5,7 +5,14 @@ import { connect } from 'react-redux';
 
 
 
+
+
 export class App extends Component {
+
+  handleOnClick() {
+    this.props.addRestaurant();
+  }
+
   render() {
     return (
       <div className="App">
