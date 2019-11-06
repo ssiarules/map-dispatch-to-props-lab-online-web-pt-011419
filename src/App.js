@@ -17,7 +17,9 @@ export class App extends Component {
 };
 
 const mapDispatchToProps = (dispatch) => {
-
+  return {
+    addItem: () => {dispatch(addRestaurant()) }
+ }
 }
 
 
