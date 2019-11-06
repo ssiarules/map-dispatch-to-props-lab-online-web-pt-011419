@@ -4,14 +4,8 @@ import Restaurants from './components/Restaurants';
 import { connect } from 'react-redux';
 
 
-
-
-
 export class App extends Component {
 
-  handleOnClick() {
-    this.props.addRestaurant();
-  }
 
   render() {
     return (
@@ -23,14 +17,10 @@ export class App extends Component {
   }
 };
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-    addItem: () => {dispatch(addRestaurant()) }
- }
-}
 
 
 
 
 
-export default connect(mapDispatchToProps)(App);
+
+export default connect(App);
