@@ -4,6 +4,7 @@ import Restaurants from './components/Restaurants';
 import { connect } from 'react-redux';
 
 
+
 export class App extends Component {
   render() {
     return (
